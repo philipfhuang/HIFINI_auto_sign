@@ -6,6 +6,10 @@ def sign_in(client):
     url = "https://www.hifini.com/sg_sign.htm"
     cookie = os.getenv("COOKIE")
 
+    if cookie is None:
+        print("COOKIE 环境变量未设置")
+        exit(1)
+
     headers = headers = {
         "Accept": "text/plain, */*; q=0.01",
         "Accept-Encoding": "gzip, deflate, br",
