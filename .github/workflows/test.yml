@@ -1,0 +1,14 @@
+name: test
+
+on:
+  schedule:
+    - cron: '* * * * *'  # 0:00 GMT+8 is 16:00 GMT
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: test
+        run: |
+          echo "test"
