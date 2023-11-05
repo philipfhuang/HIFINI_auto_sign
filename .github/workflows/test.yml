@@ -3,6 +3,7 @@ name: test
 on:
   schedule:
     - cron: '* * * * *'  # 0:00 GMT+8 is 16:00 GMT
+  workflow_dispatch:
 
 jobs:
   build:
