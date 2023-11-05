@@ -3,7 +3,7 @@ name: HIFINI auto sign
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * * *'  # 0:00 GMT+8 is 16:00 GMT
+    - cron: '* * * * *'  # 0:00 GMT+8 is 16:00 GMT
 
 jobs:
   build:
